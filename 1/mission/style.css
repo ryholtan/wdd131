@@ -1,0 +1,61 @@
+/* Set the default font size and family */
+body {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Line */
+.custom-line {
+    width: 100%;          
+    margin: 20px auto;   
+    border: none;        
+    height: 1px;        
+    background-color: gray; 
+}
+
+/* Style the subtitle */
+h2 {
+    color: #006EB6;
+    font-size: medium;
+    letter-spacing: 3px;
+    margin-bottom: -15px;
+}
+
+/* Center titles and main content block */
+.title {
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 3px; 
+}
+
+p {
+    text-align: left;
+    margin-top: 60px;
+}
+
+/* Limit content inside a box to a maximum width */
+.page {
+    max-width: 600px;
+    margin: 0 auto; 
+    border: 1px solid gray;
+    padding: 40px 150px;
+}
+
+/* Adjust the line height for better readability */
+.main-content {
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+/* Add space on list items */
+li {
+    margin-bottom: 10px;
+}
+
+/* Resize the logo */
+.logo {
+    width: 150px;
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+}
