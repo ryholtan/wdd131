@@ -24,7 +24,7 @@ h2 {
 /* Center titles and main content block */
 .title {
     text-align: center;
-    text-transform: capitalize;
+    text-transform: uppercase;
     letter-spacing: 3px; 
 }
 
