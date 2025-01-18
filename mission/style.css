@@ -1,3 +1,12 @@
+.Dark {
+    background-color: #333;
+    color: white;
+}
+
+.Dark h2 {
+    color: #A0D4ED
+}
+
 /* Set the default font size and family */
 body {
     font-size: 20px;
