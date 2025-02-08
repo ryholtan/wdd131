@@ -8,7 +8,7 @@
     --text-light: #ebebeb;
     --primary-font: Arial, Helvetica, sans-serif;
     --secondary-font: Mooli, san-serif;
- }
+}
 
 body {
     font-family: var(--primary-font);
@@ -18,6 +18,20 @@ body {
     text-align: center;
 }
 
+.nav {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
 header {
     background-color: var(--primary-color);
     padding: 1em;
@@ -25,6 +39,11 @@ header {
     width: 100%;
     font-size: x-large;
     text-align: center; 
+}
+
+.topTitle {
+    font-size: 3em;
+    letter-spacing: 2px;
 }
 
 main {
@@ -67,14 +86,50 @@ button {
     outline: none;
 }
 
-a {
+.hide {
     display: none;
+}
+
+.viewer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+    padding: 5%;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+.viewer img {
+    max-width: 100;
+    max-height: 100;
+    object-fit: contain;
+    height: auto;
+    width: auto;
+    border: none;
+    box-shadow: none;
+}
+
+.close-viewer {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    z-index: 1001;
 }
 
 @media screen and (min-width: 700px) {
     .gallery {
         grid-template-columns: 1fr 1fr;
-    }
+    }   
     
 }
 
@@ -82,12 +137,19 @@ a {
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    
-    button {
+    .menu-btn {
         display: none;
     }
-
-    a {
+    .hide {
         display: contents;
+    }
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .nav ul {
+        display: flex;
     }
 }
