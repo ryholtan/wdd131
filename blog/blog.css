@@ -1,0 +1,144 @@
+ body {
+     font-family: Arial, sans-serif;
+     background-color: white;
+     margin: 0;
+     padding: 0;
+ }
+
+ header {
+     text-align: center;
+     padding: 20px 0;
+ }
+
+ h1 {
+     font-size: 2rem;
+     color: #12021f;
+     margin-bottom: 10px;
+     font-family: serif;
+ }
+
+ .nav-container {
+     border-top: 2px solid #FFD700;
+     border-bottom: 2px solid #FFD700;
+     padding: 10px 0;
+     text-align: center;
+ }
+
+ nav ul {
+     list-style-type: none;
+     padding: 0;
+     margin-right: 50px;
+     display: flex;
+     justify-content: right;
+     gap: 20px;
+ }
+
+ nav a {
+     text-decoration: none;
+     color: #800000;
+     font-size: 1.2rem;
+     font-weight: bold;
+ }
+
+ .container {
+     display: flex;
+     max-width: 1000px;
+     margin: auto;
+     padding: 20px;
+ }
+
+ .main-content {
+     flex: 2;
+ }
+
+ .book {
+     display: flex;
+     padding: 20px 0;
+     
+ }
+
+ .book-info {
+     flex: 2;
+     padding-right: 20px;
+     margin-left: 20px;
+ }
+
+ .book-title {
+     font-size: 1.3rem;
+     font-weight: bold;
+     color: #800000;
+     font-family: serif;
+ }
+
+ .book img {
+     display: block;
+     margin: 10px auto;
+     max-width: 150px;
+ }
+
+ .book-summary {
+     font-size: 0.9rem;
+     color: black;
+ }
+
+ .book-meta {
+     flex: 1;
+     border-right: 1px solid #FFD700;
+     padding-left: 20px;
+     padding-right: 20px;
+     text-align: right;
+     flex-direction: column;
+     justify-content: top;
+ }
+
+ .book-meta div {
+     margin-bottom: 5px;
+ }
+
+ .book-meta .rating {
+     color: #FFD700;
+ }
+
+ .book-meta :not(.date) {
+    font-size: .9rem;
+ }
+
+ .filter-section {
+     flex: 1;
+     border: 1px solid #FFD700;
+     padding: 10px;
+     margin-left: 20px;
+ }
+
+ .skiptocontent a {
+     position: absolute;
+     top: -40px;
+     left: 0;
+     background: #000;
+     color: #fff;
+     padding: 10px;
+     text-decoration: none;
+ }
+
+ .skiptocontent a:focus {
+     top: 0;
+ }
+
+ .book-summary {
+     position: relative;
+     margin: 0;
+     padding-bottom: 20px;
+ }
+
+ .read-more {
+     display: inline;
+     color: rgb(143, 27, 19);
+     cursor: pointer;
+     text-decoration: none;
+     margin-top: 10px;
+     overflow: visible;
+ }
+
+ .read-more:hover {
+     text-decoration: underline;
+ }
