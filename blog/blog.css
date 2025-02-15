@@ -15,6 +15,7 @@
      color: #12021f;
      margin-bottom: 10px;
      font-family: serif;
+     text-align: center;
  }
 
  .nav-container {
@@ -64,10 +65,11 @@
  }
 
  .book-title {
-     font-size: 1.3rem;
+     font-size: 1.5rem;
      font-weight: bold;
      color: #800000;
      font-family: serif;
+     margin-top: -9px;
  }
 
  .book img {
