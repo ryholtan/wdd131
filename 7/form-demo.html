@@ -1,0 +1,54 @@
+<!-- form-demo.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="form-demo.css" />
+    <script src="form-demo.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+    <main>
+        <section class="errors"></section>
+        <form id="checkoutForm" action="completed.html">
+            <label for="fullName">Full Name:</label><br>
+            <input type="text" id="fullName" name="fullName" required><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="name@example.com" required><br>
+            
+            <label for="address">Address:</label><br>
+            <textarea type="text" id="address" name="address" rows="5" required></textarea><br>
+            
+            <label for="paymentMethod">Payment Method:</label><br>
+            <select id="paymentMethod" name="paymentMethod" required>
+                <option value="selectPayment">Select Payment Method</option>
+                <option value="creditCard">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="dollHairs">Doll Hairs</option>
+            </select><br>
+            
+            <label for="creditCardNumber">Credit Card Number:</label><br>
+            <input 
+                type="text" 
+                id="creditCardNumber" 
+                name="creditCardNumber" 
+                pattern="[0-9]{16}"
+                placeholder="16 Digits"
+                required><br>
+            
+            <label for="paypalUsername">PayPal Username:</label><br>
+            <input type="text" id="paypalUsername" name="paypalUsername" placeholder="Enter PayPal Username" required><br>
+            
+            <button type="submit">Place Order</button>
+        </form>
+    </main>
+</body>
+
+</html>
