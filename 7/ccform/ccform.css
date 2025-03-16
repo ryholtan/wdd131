@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,300);
 
 body {
-    background-color: #ffb242;
+    background-color: #fafafa;
     font-family: lato, 'helvetica-light';
     position: relative;
     text-transform: uppercase;
@@ -23,8 +23,8 @@ body {
 }
 
 #card-btn {
-    background-color: rgba(251, 251, 251, 0.8);
-    color: #ffb242;
+    background-color: rgba(202, 198, 198, 0.8);
+    color: #140e04;
     position: absolute;
     bottom: -55px;
     right: 0;
@@ -33,11 +33,10 @@ body {
     height: 42px;
     font-size: 12px;
     font-family: lato, 'helvetica-light', 'sans-serif';
-    text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 400;
     outline: none;
-    border: none;
+    border: solid black;
     cursor: pointer;
 }
 
@@ -53,7 +52,7 @@ body {
 #card-front,
 #card-back {
     position: absolute;
-    background-color: #498ee4;
+    background-color: #d3d4d6;
     width: 390px;
     height: 250px;
     border-radius: 6px;
@@ -62,7 +61,7 @@ body {
     font-size: 10px;
     letter-spacing: 1px;
     font-weight: 300;
-    color: white;
+    color: rgb(14, 1, 1);
 }
 
 #card-image {
@@ -86,7 +85,7 @@ body {
 #card-stripe {
     width: 100%;
     height: 55px;
-    background-color: #3d5266;
+    background-color: #01080e;
     position: absolute;
     right: 0;
 }
@@ -189,12 +188,12 @@ body {
 input {
     border: none;
     outline: none;
-    background-color: #5a9def;
+    background-color: #eef0f3;
     height: 30px;
     line-height: 30px;
     padding: 0 10px;
     margin: 0 0 25px;
-    color: white;
+    color: rgb(15, 2, 2);
     font-size: 10px;
     box-sizing: border-box;
     border-radius: 4px;
@@ -203,7 +202,7 @@ input {
 }
 
 input::-webkit-input-placeholder {
-    color: #fff;
+    color: #0e0303;
     opacity: 0.7;
     font-family: lato, 'helvetica-light', 'sans-serif' letter-spacing 1px;
     font-weight: 300;
