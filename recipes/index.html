@@ -17,11 +17,44 @@
 </head>
 
 <body>
-    <div id="page">
-        <h1>Who'd a thunk it?</h1>
-        <button id="showPrompt">Go on, push me!</button>
-        <p id="response"></p>
-    </div>
+    <header>
+        <img src="images/images/recipe-book.png" alt="Recipe Book Logo">
+        <h1>Recipe Book</h1>
+    </header>
+
+    <main>
+        <form class="search-form">
+            <input type="text" placeholder="Search for a recipe...">
+            <button type="submit">Search</button>
+        </form>
+
+        <section class="recipe">
+            <h2>Spaghetti Carbonara</h2>
+            <img src="images/images/spaghetti-carbonara.jpg" alt="Spaghetti Carbonara">
+            <p>A classic Italian pasta dish with eggs, cheese, pancetta, and pepper.</p>
+
+            <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">☆</span>
+            </span>
+        </section>
+    </main>
+
+    <footer>
+        <p style="font-size: 0.6em;">
+            <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik -
+                Flaticon</a>
+        </p>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/images/instagram_icon.svg" alt="Instagram icon"></a>
+            <a href="#"><img src="images/images/youtube_icon.svg" alt="YouTube icon"></a>
+            <a href="#"><img src="images/images/pinterest_icon.svg" alt="Pinterest icon"></a>
+        </div>
+    </footer>
 </body>
 
 </html>
