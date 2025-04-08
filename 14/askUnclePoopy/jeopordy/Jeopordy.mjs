@@ -20,10 +20,12 @@ export class JeopardyButton {
             document.getElementById("question-box").style.cursor = "auto";
             if (this.category in jeopardyData) {
                 document.getElementById("question-text").textContent = this.answer;
+                document.getElementById("question-image").style.display = "block";
             } 
         };
 
         document.querySelector(".question-box").addEventListener("click", showAnswer);
+        document.getElementById("question-image").style.display = "none";
     }
 
     cellCreator() {
@@ -44,13 +46,13 @@ export const jeopardyData = {
         400: { question: "What is a peer-reviewed source?", answer: "An article reviewed by experts before publication." },
         500: { question: "What tool can help with grammar and clarity?", answer: "Grammarly or Purdue OWL." }
     },
-    "Making a Picture": {
-        100: { question: "What free tool can be used for graphic design?", answer: "Canva or GIMP." },
-        200: { question: "What is resolution in an image?", answer: "The number of pixels per inch (PPI)." },
-        300: { question: "What is the difference between JPG and PNG?", answer: "PNG supports transparency, JPG is smaller in file size." },
-        400: { question: "What is vector vs raster graphics?", answer: "Vector graphics scale infinitely, raster graphics do not." },
-        500: { question: "What is a color palette and why is it important?", answer: "A set of colors used for consistency and aesthetic appeal." }
-    },
+    // "Making a Picture": {
+    //     100: { question: "What free tool can be used for graphic design?", answer: "Canva or GIMP." },
+    //     200: { question: "What is resolution in an image?", answer: "The number of pixels per inch (PPI)." },
+    //     300: { question: "What is the difference between JPG and PNG?", answer: "PNG supports transparency, JPG is smaller in file size." },
+    //     400: { question: "What is vector vs raster graphics?", answer: "Vector graphics scale infinitely, raster graphics do not." },
+    //     500: { question: "What is a color palette and why is it important?", answer: "A set of colors used for consistency and aesthetic appeal." }
+    // },
     "Friends & Activities": {
         100: { question: "What is the easiest way to meet people in college?", answer: "Join a club or attend campus events." },
         200: { question: "What app can help organize events with friends?", answer: "Google Calendar or GroupMe." },
@@ -79,41 +81,42 @@ export const jeopardyData = {
         400: { question: "How much sleep should a student get?", answer: "7-9 hours per night for optimal brain function." },
         500: { question: "What is a good tool for flashcards?", answer: "Anki or Quizlet." }
     },
-    "Scam Advice": {
-        100: { question: "What is phishing?", answer: "A scam where someone tries to steal personal info via email or messages." },
-        200: { question: "What is the safest way to buy used textbooks?", answer: "Through reputable sites like Chegg or Amazon." },
-        300: { question: "How can you tell if a job offer is a scam?", answer: "If it asks for upfront payment or personal info right away." },
-        400: { question: "What is a common online scam?", answer: "Fake rental listings or tech support scams." },
-        500: { question: "How can you protect your personal information online?", answer: "Use strong passwords and enable two-factor authentication." }
-    },
+    // "Scam Advice": {
+    //     100: { question: "What is phishing?", answer: "A scam where someone tries to steal personal info via email or messages." },
+    //     200: { question: "What is the safest way to buy used textbooks?", answer: "Through reputable sites like Chegg or Amazon." },
+    //     300: { question: "How can you tell if a job offer is a scam?", answer: "If it asks for upfront payment or personal info right away." },
+    //     400: { question: "What is a common online scam?", answer: "Fake rental listings or tech support scams." },
+    //     500: { question: "How can you protect your personal information online?", answer: "Use strong passwords and enable two-factor authentication." }
+    // },
     "Registering for Classes": {
         100: { question: "When should you register for classes?", answer: "As soon as registration opens to get the best schedule." },
         200: { question: "What is a prerequisite?", answer: "A class you must take before enrolling in another course." },
         300: { question: "How can you find easy electives?", answer: "Check RateMyProfessors or ask upperclassmen." },
         400: { question: "What is the best way to balance a schedule?", answer: "Mix hard and easy classes to avoid burnout." },
         500: { question: "What is waitlisting a class?", answer: "Signing up in case a spot opens later." }
-    },
-    "Phrases to Understand in Your Area": {
-        100: { question: "What is ‘syllabus week’?", answer: "The first week of class where professors go over expectations." },
-        200: { question: "What does ‘pulling an all-nighter’ mean?", answer: "Staying up all night to study or finish assignments." },
-        300: { question: "What does ‘TA’ stand for?", answer: "Teaching Assistant – a student who helps with a class." },
-        400: { question: "What is a ‘study group’?", answer: "A group of students who study together for exams." },
-        500: { question: "What does ‘gen ed’ mean?", answer: "General education courses required for all students." }
-    },
-    "Religion Information": {
-        100: { question: "What is an interfaith group on campus?", answer: "A club where students from different religions meet and discuss beliefs." },
-        200: { question: "Where can you find a place of worship?", answer: "Check student services or local directories." },
-        300: { question: "How can you practice your faith in college?", answer: "Join campus religious groups or attend services nearby." },
-        400: { question: "What is a faith-based scholarship?", answer: "A scholarship given based on religious involvement or values." },
-        500: { question: "How can you learn about other religions?", answer: "Take a world religions class or attend interfaith events." }
-    },
-    "Website & Internet Information": {
-        100: { question: "What is a secure website?", answer: "A site that uses HTTPS encryption." },
-        200: { question: "What is a VPN and why use one?", answer: "A Virtual Private Network encrypts internet traffic for security." },
-        300: { question: "How can you tell if an email is a scam?", answer: "Check for misspellings, urgent language, and suspicious links." },
-        400: { question: "What is a good way to manage passwords?", answer: "Use a password manager like Bitwarden or LastPass." },
-        500: { question: "What is phishing and how can you avoid it?", answer: "A scam trying to steal personal data; avoid clicking unknown links." }
-    }
+        }
+//          ,
+//     "Phrases to Understand in Your Area": {
+//         100: { question: "What is ‘syllabus week’?", answer: "The first week of class where professors go over expectations." },
+//         200: { question: "What does ‘pulling an all-nighter’ mean?", answer: "Staying up all night to study or finish assignments." },
+//         300: { question: "What does ‘TA’ stand for?", answer: "Teaching Assistant – a student who helps with a class." },
+//         400: { question: "What is a ‘study group’?", answer: "A group of students who study together for exams." },
+//         500: { question: "What does ‘gen ed’ mean?", answer: "General education courses required for all students." }
+//     },
+//     "Religion Information": {
+//         100: { question: "What is an interfaith group on campus?", answer: "A club where students from different religions meet and discuss beliefs." },
+//         200: { question: "Where can you find a place of worship?", answer: "Check student services or local directories." },
+//         300: { question: "How can you practice your faith in college?", answer: "Join campus religious groups or attend services nearby." },
+//         400: { question: "What is a faith-based scholarship?", answer: "A scholarship given based on religious involvement or values." },
+//         500: { question: "How can you learn about other religions?", answer: "Take a world religions class or attend interfaith events." }
+//     },
+//     "Website & Internet Information": {
+//         100: { question: "What is a secure website?", answer: "A site that uses HTTPS encryption." },
+//         200: { question: "What is a VPN and why use one?", answer: "A Virtual Private Network encrypts internet traffic for security." },
+//         300: { question: "How can you tell if an email is a scam?", answer: "Check for misspellings, urgent language, and suspicious links." },
+//         400: { question: "What is a good way to manage passwords?", answer: "Use a password manager like Bitwarden or LastPass." },
+//         500: { question: "What is phishing and how can you avoid it?", answer: "A scam trying to steal personal data; avoid clicking unknown links." }
+//     }
 };
 
 
