@@ -28,15 +28,39 @@ export class JeopardyButton {
         document.getElementById("question-image").style.display = "none";
     }
 
-    cellCreator() {
+    cellCreator(target) {
         const cell = document.createElement("div");
         cell.classList.add("cell");
         cell.textContent = this.value;
         cell.onclick = () => this.showQuestion();
-        board.appendChild(cell);
+        target.appendChild(cell);
     } 
 
 }
+
+// export const jeopardyData = {
+//     "History": {
+//         100: { question: "Who was Joseph Smith, Jr.?", answer: "The founder of the LDS Church" },
+//         200: { question: "Where and when was the LDS Church officially organized?", answer: "In Fayette, New York, on April 6, 1830" },
+//         300: { question: "What significant event occurred in 1844 that led to the exodus of Latter-day Saints to the West?", answer: "The martyrdom of Joseph Smith" },
+//         400: { question: "Who was Brigham Young and what was his role in the Mormon migration to Utah?", answer: "Brigham Young was the second president of the LDS Church and led the Mormon pioneers to Utah" },
+//         500: { question: "What was the 'Manifesto' of 1890 and how did it impact the practice of polygamy in the LDS Church?", answer: "The Manifesto was a declaration by Wilford Woodruff, then-president of the LDS Church, that ended the public practice of polygamy in the United States" }
+//     },
+//     "Beliefs": {
+//         100: { question: "What are the four fundamental principles of the LDS Church?", answer: "Faith in the Lord Jesus Christ, Repentance, Baptism, and the Gift of the Holy Ghost" },
+//         200: { question: "What is the Mormon belief regarding the nature of God?", answer: "That God the Father, Jesus Christ, and the Holy Ghost are three separate beings, united in purpose" },
+//         300: { question: "What is the Mormon belief regarding the pre-existence and the purpose of life?", answer: "That we are eternal beings who existed as spirits before this life and that the purpose of life is to gain a body, learn, grow, and return to our heavenly home" },
+//         400: { question: "What is the Mormon belief regarding the afterlife and the plan of salvation?", answer: "That there is a life after death, where spirits await resurrection and judgment, and that the plan of salvation includes the opportunity for all to receive the gospel and be saved" },
+//         500: { question: "What is the Mormon belief regarding the Book of Mormon and its role in the restoration of the gospel?", answer: "That the Book of Mormon is another testament of Jesus Christ, written by ancient prophets and translated by Joseph Smith, and that it serves as a companion to the Bible in testifying of the divinity of Christ" }
+//     },
+//     "Practices": {
+//         100: { question: "What is the Sacrament Meeting and what happens during it?", answer: "The Sacrament Meeting is a weekly worship service where members partake of the sacrament (bread and water) in remembrance of Christ's atonement" },
+//         200: { question: "What are the responsibilities of a bishop in the LDS Church?", answer: "A bishop oversees the spiritual and temporal needs of the members in his ward, administers the sacrament, performs baptisms, and provides for the poor and needy" },
+//         300: { question: "What is the temple and what are the ordinances performed there?", answer: "The temple is a sacred building where Latter-day Saints perform ordinances such as baptisms for the dead, endowments, and sealings, which bind families together for eternity" },
+//         400: { question: "What is the Word of Wisdom and what does it prohibit?", answer: "The Word of Wisdom is a health code that prohibits the consumption of tobacco, alcohol, coffee, and tea" },
+//         500: { question: "What is the Mormon practice of family history and genealogy, and why is it important?", answer: "Mormons engage in family history and genealogy work to identify their ancestors, perform ordinances for them in temples, and connect with their eternal family" }
+//     }
+// };
 
 export const jeopardyData = {
     "Writing a Paper": {
